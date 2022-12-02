@@ -19,7 +19,7 @@ then
     file="demo-big-en.zip"
 fi
 
-wget --show-progress "https://edu.postgrespro.com/$file"
+wget --show-progress --progress=bar:force "https://edu.postgrespro.com/$file"
 
 unzip $file
 
