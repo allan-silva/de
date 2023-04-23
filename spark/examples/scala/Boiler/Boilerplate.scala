@@ -4,7 +4,7 @@ package boilerplate
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
-// sbt package
+// sbt clean package
 // spark-submit --class=boilerplate.Boilerplate target/scala-2.12/boilerplate_2.12-1.0.jar path-to-file
 object Boilerplate {
   def main(args: Array[String]): Unit = {

@@ -11,11 +11,11 @@ import org.apache.spark.sql.types.{StringType, IntegerType, BooleanType, FloatTy
 // spark-submit --class=firecalls.Firecalls target/scala-2.12/firecalls_2.12-1.0.jar ../../datasets/sf-fire-calls.csv
 object Firecalls {
   def main(args: Array[String]): Unit = {
-    if (args.length <= 0) {
+    if (args.length <= 1) {
       println("No input file found.")
       System.exit(1)
     }
-
+    
     val inputFile = args(0)
 
     val spark = SparkSession.builder
